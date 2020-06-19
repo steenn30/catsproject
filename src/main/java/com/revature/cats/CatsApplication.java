@@ -36,10 +36,10 @@ public class CatsApplication {
 	 * Swagger "Docket" bean for all the Controllers in our project. API Documentation
 	 * @return
 	 */
-	@Bean
-	public Docket catApi() {
-		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.revature.cats")).build();
-	}
+//	@Bean
+//	public Docket catApi() {
+//		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.revature.cats")).build();
+//	}
 	
 	@Bean
 	public DemoBean createDemoBean() {
