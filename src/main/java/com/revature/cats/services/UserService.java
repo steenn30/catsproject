@@ -43,11 +43,11 @@ public class UserService {
 			throw new UserNotFound();
 		}
 	}
-	public Boolean checkCredentials(String username, String password) {
-		// we just want to check if this username and password exist in the db
-	
-		return userRepository.findByUsernameAndPassword(username,password).size() > 0;
-	}
+//	public Boolean checkCredentials(String username, String password) {
+//		// we just want to check if this username and password exist in the db
+//	
+//		return userRepository.findByUsernameAndPassword(username,password).size() > 0;
+//	}
 	
 	public User createOrUpdate(User user) {
 		return userRepository.save(user);
