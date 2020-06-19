@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.revature.cats.dtos.Credentials;
+//import com.revature.cats.dtos.Credentials;
 import com.revature.cats.models.User;
 import com.revature.cats.services.UserService;
 
