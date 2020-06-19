@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import com.revature.cats.models.User;
 
 public interface UserRepository extends JpaRepository<User, Integer>{
-	@Query("select u from User u where u.username= :username and u.password = :password")
-	List<User> checkUsernamePassword(String username, String password);
+//	@Query("select u from User u where u.username= :username and u.password = :password")
+//	List<User> checkUsernamePassword(String username, String password);
 
 }
