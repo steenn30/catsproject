@@ -55,12 +55,12 @@ public class UserController {
 		return userService.createOrUpdate(user);
 		
 	}
-	@PostMapping("/login")
-	public Boolean attemptLogin(@RequestBody Credentials creds, HttpSession session) {
-		Boolean isLoggedIn =  userService.checkCredentials(creds.getUsername(), creds.getPassword());
-		
-		session.setAttribute("isLoggedIn", isLoggedIn);
-		
-		return isLoggedIn;
-	}
+//	@PostMapping("/login")
+//	public Boolean attemptLogin(@RequestBody Credentials creds, HttpSession session) {
+//		Boolean isLoggedIn =  userService.checkCredentials(creds.getUsername(), creds.getPassword());
+//		
+//		session.setAttribute("isLoggedIn", isLoggedIn);
+//		
+//		return isLoggedIn;
+//	}
 }
